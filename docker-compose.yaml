@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  app:
+    build:
+      context: .
+    container_name: goapp
+    volumes:
+      - ./:/usr/app/src
+    tty: true
